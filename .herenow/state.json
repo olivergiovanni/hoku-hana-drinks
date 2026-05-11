@@ -1,0 +1,10 @@
+{
+  "publishes": {
+    "sturdy-thistle-hvr3": {
+      "siteUrl": "https://sturdy-thistle-hvr3.here.now/",
+      "claimToken": "1b464ce4b5ad0fc00c24c813f33e8b603d20aaf68273aac231fde09ca12e09a8",
+      "claimUrl": "https://here.now/claim?slug=sturdy-thistle-hvr3&token=1b464ce4b5ad0fc00c24c813f33e8b603d20aaf68273aac231fde09ca12e09a8",
+      "expiresAt": "2026-05-12T07:27:26.337Z"
+    }
+  }
+}

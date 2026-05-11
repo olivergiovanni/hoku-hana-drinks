@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #172033;
+  --reef: #026c74;
+  --reef-deep: #03484f;
+  --sun: #ffb703;
+  --papaya: #fb6f4f;
+  --orchid: #7661d1;
+  --foam: #fff8e9;
+  --shell: #ffe8c9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 183, 3, 0.38), transparent 24rem),
+    radial-gradient(circle at 90% 8%, rgba(118, 97, 209, 0.32), transparent 22rem),
+    linear-gradient(135deg, #fff8e9 0%, #ddf7ed 44%, #cfeaff 100%);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.island-pattern {
+  background-image:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.32) 1px, transparent 1px),
+    linear-gradient(30deg, rgba(255, 255, 255, 0.26) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.sun-moon-mark {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  flex: 0 0 auto;
+}
+
+.sun-moon-mark::before,
+.sun-moon-mark::after {
+  position: absolute;
+  content: "";
+  border-radius: 999px;
+}
+
+.sun-moon-mark::before {
+  inset: 3px 17px 17px 3px;
+  background: #ffbf1f;
+  box-shadow: 0 0 0 8px rgba(255, 191, 31, 0.18);
+}
+
+.sun-moon-mark::after {
+  inset: 18px 2px 2px 24px;
+  background: #5264e2;
+  box-shadow: -10px 0 0 0 #fff8e9 inset;
+}
+
+.drink-art {
+  position: relative;
+  min-height: 178px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0)),
+    var(--drink-bg);
+}
+
+.drink-art::before {
+  position: absolute;
+  right: 18%;
+  bottom: 18px;
+  width: 74px;
+  height: 116px;
+  content: "";
+  border: 5px solid rgba(255, 255, 255, 0.82);
+  border-radius: 12px 12px 28px 28px;
+  background:
+    linear-gradient(180deg, transparent 0 24%, rgba(255, 255, 255, 0.65) 24% 29%, transparent 29%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.45), transparent 36%),
+    var(--liquid);
+  box-shadow: 0 18px 30px rgba(2, 61, 72, 0.22);
+  transform: rotate(3deg);
+}
+
+.drink-art::after {
+  position: absolute;
+  right: 16%;
+  bottom: 124px;
+  width: 56px;
+  height: 34px;
+  content: "";
+  border-radius: 999px 999px 999px 16px;
+  background: #28a76d;
+  box-shadow:
+    -46px 24px 0 -9px #ffcc4d,
+    -34px 7px 0 -14px #fff8e9;
+  transform: rotate(-12deg);
+}
+
+.wave-band {
+  background:
+    linear-gradient(135deg, rgba(2, 108, 116, 0.96), rgba(3, 72, 79, 0.98)),
+    repeating-linear-gradient(90deg, transparent 0 16px, rgba(255, 255, 255, 0.08) 16px 20px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- Responsive Media Queries --- */
+
+/* Tablet View (up to 1024px) */
+@media (max-width: 1024px) {
+  .mx-auto {
+    max-width: 100%;
+  }
+
+  .island-pattern {
+    padding: 2.5rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+  }
+
+  .grid-cols-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile View (up to 640px) */
+@media (max-width: 640px) {
+  .island-pattern {
+    padding: 1.5rem 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .sticky {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .btn-responsive {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Adjust sun-moon mark size on mobile */
+  .sun-moon-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sun-moon-mark::before {
+    inset: 2px 10px 10px 2px;
+  }
+
+  .sun-moon-mark::after {
+    inset: 10px 1px 1px 14px;
+  }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .island-pattern {
+    padding: 1rem 0.5rem;
+  }
+
+  .p-6, .p-5, .p-4 {
+    padding: 0.75rem !important;
+  }
+
+  .text-3xl {
+    font-size: 1.25rem;
+  }
+
+  .text-4xl {
+    font-size: 1.5rem;
+  }
+}
