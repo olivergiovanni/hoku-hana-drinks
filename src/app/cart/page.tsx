@@ -1,9 +1,9 @@
 "use client";
 
-import { CartItemEditor } from "../components/CartItemEditor";
-import { CheckoutPanel } from "../components/CheckoutPanel";
-import { SectionHeader } from "../components/SectionHeader";
-import { useOrderStore } from "../context/order-store";
+import { CartItemEditor } from "../../components/CartItemEditor";
+import { CheckoutPanel } from "../../components/CheckoutPanel";
+import { SectionHeader } from "../../components/SectionHeader";
+import { useOrderStore } from "../../context/order-store";
 
 export default function CartPage() {
   const { cartDetails, clearCart } = useOrderStore();

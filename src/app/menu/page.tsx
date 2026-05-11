@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ProductCard } from "../components/ProductCard";
-import { SectionHeader } from "../components/SectionHeader";
-import { useOrderStore } from "../context/order-store";
-import { drinks } from "../data/catalog";
+import { ProductCard } from "../../components/ProductCard";
+import { SectionHeader } from "../../components/SectionHeader";
+import { useOrderStore } from "../../context/order-store";
+import { drinks } from "../../data/catalog";
 
 export default function MenuPage() {
   const router = useRouter();

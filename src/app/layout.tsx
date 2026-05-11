@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { AppShell } from "./components/AppShell";
-import { OrderStoreProvider } from "./context/order-store";
+import { AppShell } from "../components/AppShell";
+import { OrderStoreProvider } from "../context/order-store";
 import "./globals.css";
 
 export const metadata: Metadata = {

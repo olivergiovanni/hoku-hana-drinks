@@ -1,8 +1,8 @@
 "use client";
 
-import { ReceiptCard } from "../components/ReceiptCard";
-import { SectionHeader } from "../components/SectionHeader";
-import { useOrderStore } from "../context/order-store";
+import { ReceiptCard } from "../../components/ReceiptCard";
+import { SectionHeader } from "../../components/SectionHeader";
+import { useOrderStore } from "../../context/order-store";
 
 export default function HistoryPage() {
   const { orders, clearOrders } = useOrderStore();
