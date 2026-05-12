@@ -2,10 +2,13 @@
   "name": "hoku-hana-drinks",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "publish": "node scripts/publish-herenow.js out",
+    "deploy": "npm run build && npm run publish"
   },
   "dependencies": {
     "next": "^15.3.6",

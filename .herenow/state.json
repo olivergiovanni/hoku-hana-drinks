@@ -1,10 +1,10 @@
 {
   "publishes": {
-    "sturdy-thistle-hvr3": {
-      "siteUrl": "https://sturdy-thistle-hvr3.here.now/",
-      "claimToken": "1b464ce4b5ad0fc00c24c813f33e8b603d20aaf68273aac231fde09ca12e09a8",
-      "claimUrl": "https://here.now/claim?slug=sturdy-thistle-hvr3&token=1b464ce4b5ad0fc00c24c813f33e8b603d20aaf68273aac231fde09ca12e09a8",
-      "expiresAt": "2026-05-12T07:27:26.337Z"
+    "graceful-kettle-kmq8": {
+      "siteUrl": "https://graceful-kettle-kmq8.here.now/",
+      "claimToken": "f0a88e05ff4435275887fd0f14b13297584830680399740c0249f009b417f2b6",
+      "claimUrl": "https://here.now/claim?slug=graceful-kettle-kmq8&token=f0a88e05ff4435275887fd0f14b13297584830680399740c0249f009b417f2b6",
+      "expiresAt": "2026-05-13T01:59:09.135Z"
     }
   }
 }
