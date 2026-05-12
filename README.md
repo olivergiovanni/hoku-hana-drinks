@@ -56,10 +56,17 @@ The application is engineered for a seamless experience across all devices, with
 
 ### Deployment
 
-This project is deployed to **here.now** using the `heredotnow` skill. The process is automated, but the underlying mechanism involves building the static site and publishing the `out` directory.
+This project is deployed to **here.now** using the `heredotnow` skill. You can deploy the project manually with the following command:
 
 ```bash
-# The heredotnow skill handles this automatically:
-npm run build
-node scripts/publish-herenow.mjs out
+npm run deploy
 ```
+
+This script automatically builds the static site and publishes the `out` directory using the `publish-herenow.js` script:
+
+```bash
+# The underlying steps are:
+npm run build
+npm run publish
+```
+
